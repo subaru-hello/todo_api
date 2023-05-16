@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://rails-next-heroku-lwuoc6jsw-subaru-hello.vercel.app/'
+    origins 'https://rails-next-heroku-lwuoc6jsw-subaru-hello.vercel.app', 'http://localhost:3000'
 
     resource '*',
       headers: :any,
